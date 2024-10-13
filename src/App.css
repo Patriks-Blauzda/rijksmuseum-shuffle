@@ -1,0 +1,139 @@
+#root {
+  margin: 0 auto;
+  text-align: center;
+  color: black;
+  font-family: "Roboto";
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+
+  line-height: 1.5;
+  font-weight: 400;
+  min-width: 300px;
+}
+
+body {
+  /* Source: https://www.deviantart.com/mkrukowski/art/Free-Gallery-Wall-246012769 */
+  background-image: url(..\src\assets\background.jpg);
+  background-repeat: no-repeat;
+
+  background-size: cover;
+  background-attachment: fixed;
+
+  display: flex;
+  place-items: center;
+}
+
+button {
+  filter: drop-shadow(5px 5px 2px #1c1c1c6b);
+  vertical-align: top;
+  margin: 2vw;
+}
+
+
+.error-container {
+  margin-top: 20vw;
+}
+
+.spacer {
+  width: 80vw;
+  height: 120px;
+}
+
+
+.title {
+  filter: drop-shadow(2px 2px 3px #1c1c1c6b);
+  font-size: 3rem;
+  background-color: #00000026;
+  border-radius: 60px;
+}
+
+.painting-skeleton {
+  margin: 40px 0px 100px 0px;
+}
+
+.painting-container {
+  width: 80vw;
+  min-height: 28vw;
+  max-height: 30vw;
+}
+
+.painting-box {
+  width: 80vw;
+  height: 18vw;
+}
+
+.painting {
+  min-width: 20%;
+  max-width: 60%;
+  max-height: 80%;
+  margin: 20px;
+  filter: drop-shadow(5px 5px 2px #1c1c1c6b)
+}
+
+
+.loading-text {
+  font-size: 10px;
+  color: grey;
+}
+
+.painting-big {
+  width: 40%;
+  max-width: 35vw;
+  margin: 15px;
+  filter: drop-shadow(5px 5px 2px #1c1c1c6b);
+  float: left;
+}
+
+.description-container {
+  display: inline;
+}
+
+.description-container * {
+  align-content: end;
+}
+
+.painting-title {
+  margin-bottom: 5px;
+  text-wrap: balance;
+  font-size: 2.8rem;
+}
+
+.painting-label {
+  margin-top: 0px;
+  color: grey;
+}
+
+.painting-description {
+  text-wrap: balance;
+  font-size: 1.3rem;
+}
+
+.painting-description-missing {
+  color: grey;
+  font-style: italic;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .error-container {
+    margin-top: 50vw;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .painting-big {
+    width: 90%;
+    max-width: none;
+  }
+
+  .painting-title {
+    font-size: 2rem;
+  }
+
+  .painting-label {
+    font-size: 0.8rem;
+  }
+}
