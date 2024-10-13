@@ -8,6 +8,7 @@ export default function ErrorBoundary() {
     <div className="error-container">
       <h1>Oops!</h1>
       <p>An error has occurred!</p>
+      <p>More information can be found in the console.</p>
       <Button
         component={Link}
         to="/"

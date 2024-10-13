@@ -85,7 +85,10 @@ export default function PaintingContainer() {
                   /* Some art objects in the API are missing images,
                 those are skipped and not displayed */
                   data.artObjects[num].webImage && (
-                    <Tooltip title={data.artObjects[num].title}>
+                    <Tooltip
+                      key={`tooltip-${num}`}
+                      title={data.artObjects[num].title}
+                    >
                       <ImageListItem key={`listitem-${num}`}>
                         <Painting
                           key={num}
