@@ -120,6 +120,10 @@ button {
     margin-top: 50vw;
   }
 
+  .description-container * {
+    align-content: normal;
+  }
+
   .title {
     font-size: 2rem;
   }
